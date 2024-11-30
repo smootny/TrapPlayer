@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+   
+    
+    <div class="container">
+      <div class="ipod small">
+        <div class="screen">
+          <div class="title-bar">
+              <icon class="bar-play">
+            <i class="fas fa-play"></i>
+          </icon>
+            <div class="title">Trap Player</div>
+            <div class="battery small"></div>	
+          </div>
+
+          <div class="menu-options">
+       <audio src="music/Kevin Gates.mp3" id="audio"></audio>
+       
+       <div class="img-container">
+          <img src="images/Kevin Gates.jpg" alt="music-cover" id="cover" />
+        </div>
+       
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="music-info">
+          <div id="title" class="song-title"></div>
+        </div>
+        
+      </div>
+        
+    </div>	
+        <div class="outer-ring">
+          <svg viewBox="-150 5 350 350">
+            <path id="curve" d="m0,30 c16,-4 32,-4 48,0" />
+            <text>
+              <textPath xlink:href="#curve">menu</textPath>
+            </text>
+          </svg>
+          <icon id="prev" class="skip back" aria-label="Previous">
+            <i class="fas fa-backward"></i>
+          </icon>
+          <icon id="next" class="skip forward" aria-label="Next">
+            <i class="fas fa-forward"></i>
+          </icon>
+          <icon id="play-pause" class="play-pause" aria-label="Play/Pause">
+            <i class="fas fa-play"></i>
+          </icon>
+          <div class="touch-wheel">
+            <div class="center-button"></div>
+          </div>				
+        </div>
+      </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
